@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that provides AI assistants with Safari browser automation and developer tools access. This server enables LLMs to interact with Safari, access console logs, monitor network activity, and perform browser automation tasks.
 
+<a href="https://glama.ai/mcp/servers/@lxman/safari-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@lxman/safari-mcp-server/badge" alt="Safari Server MCP server" />
+</a>
+
 ## Features
 
 - 🚀 **Safari Browser Automation**: Start, control, and manage Safari sessions
