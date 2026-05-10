@@ -130,7 +130,8 @@ When starting a session, you can specify options:
   "options": {
     "enableInspection": true,     // Enable Web Inspector
     "enableProfiling": true,      // Enable timeline profiling
-    "usesTechnologyPreview": false // Use Safari Technology Preview
+    "usesTechnologyPreview": false, // Use Safari Technology Preview
+    "useCleanSession": false        // Reuse Safari profile (cookies/session). Default false.
   }
 }
 ```

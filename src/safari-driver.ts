@@ -45,6 +45,11 @@ export class SafariDriverManager {
         safariOptions.setTechnologyPreview(true);
       }
 
+      // Persist cookies/session data by default to improve cross-session continuity.
+      // SafariDriver capability: safari:useCleanSession
+      const useCleanSession = options.useCleanSession ?? false;
+      safariOptions.set('safari:useCleanSession', useCleanSession);
+
       // Enable logging for console and performance
       const loggingPrefs = new logging.Preferences();
       loggingPrefs.setLevel(logging.Type.BROWSER, logging.Level.ALL);

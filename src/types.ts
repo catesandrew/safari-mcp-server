@@ -2,6 +2,12 @@ export interface SafariSessionOptions {
   enableInspection?: boolean;
   enableProfiling?: boolean;
   usesTechnologyPreview?: boolean;
+  /**
+   * When false, SafariDriver will reuse the existing Safari browser profile
+   * (cookies/cache/session). This improves persistence across sessions.
+   * Defaults to false (persist by default).
+   */
+  useCleanSession?: boolean;
 }
 
 export interface SafariSession {

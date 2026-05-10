@@ -55,17 +55,21 @@ export class SafariMCPServer {
                 options: {
                   type: 'object',
                   properties: {
-                    enableInspection: { 
-                      type: 'boolean', 
+                    enableInspection: {
+                      type: 'boolean',
                       description: 'Enable Web Inspector for debugging'
                     },
-                    enableProfiling: { 
-                      type: 'boolean', 
+                    enableProfiling: {
+                      type: 'boolean',
                       description: 'Enable timeline profiling'
                     },
                     usesTechnologyPreview: {
                       type: 'boolean',
                       description: 'Use Safari Technology Preview'
+                    },
+                    useCleanSession: {
+                      type: 'boolean',
+                      description: 'When true, start with a clean Safari profile (no cookies/session). Defaults to false.'
                     }
                   }
                 }
