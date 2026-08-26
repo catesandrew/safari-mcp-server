@@ -22,7 +22,7 @@ coverage/
 # nyc test coverage
 .nyc_output
 
-# Dependency lock files (keep one)
+# Lock files from other package managers. pnpm-lock.yaml is the one we keep.
 package-lock.json
 yarn.lock
 

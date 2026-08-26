@@ -42,7 +42,7 @@ echo "✅ SafariDriver found: $(which safaridriver)"
 
 # Install dependencies
 echo "📦 Installing dependencies..."
-npm install
+pnpm install
 
 if [ $? -ne 0 ]; then
   echo "❌ Error: Failed to install dependencies"
@@ -53,7 +53,7 @@ echo "✅ Dependencies installed"
 
 # Build the project
 echo "🔨 Building project..."
-npm run build
+pnpm run build
 
 if [ $? -ne 0 ]; then
   echo "❌ Error: Failed to build project"
@@ -87,7 +87,7 @@ echo ""
 echo "🎉 Setup complete!"
 echo ""
 echo "Next steps:"
-echo "1. Run the server: npm start"
+echo "1. Run the server: pnpm start"
 echo "2. Add to Claude Desktop config:"
 echo "   File location: ~/Library/Application Support/Claude/claude_desktop_config.json"
 echo ""

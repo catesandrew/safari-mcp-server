@@ -1,6 +1,7 @@
 {
   "name": "safari-mcp-server",
   "version": "1.0.1",
+  "packageManager": "pnpm@11.22.0",
   "description": "Model Context Protocol server for Safari browser automation with dev tools access",
   "keywords": [
     "mcp",
@@ -31,10 +32,10 @@
     "dev": "tsc && node build/index.js",
     "watch": "tsc --watch",
     "clean": "rimraf build",
-    "test": "npm run build && node build/basic-tests.js",
+    "test": "pnpm run build && node build/basic-tests.js",
     "setup": "bash setup.sh",
-    "example": "npm run build && node build/example-usage.js",
-    "inspect": "npx @modelcontextprotocol/inspector node build/index.js"
+    "example": "pnpm run build && node build/example-usage.js",
+    "inspect": "pnpm dlx @modelcontextprotocol/inspector node build/index.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",

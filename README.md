@@ -48,26 +48,26 @@ Before using this MCP server, you need to enable Safari's automation features:
 
 2. **Install dependencies**:
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. **Build the project**:
    ```bash
-   npm run build
+   pnpm run build
    ```
 
 ## Usage
 
 ### Running the Server
 ```bash
-npm start
+pnpm start
 ```
 
 The server will start and listen for MCP protocol messages on stdio.
 
 ### Development Mode
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Available Tools
@@ -161,17 +161,17 @@ safari-mcp-server/
 
 ### Building
 ```bash
-npm run build
+pnpm run build
 ```
 
 ### Watching for Changes
 ```bash
-npm run watch
+pnpm run watch
 ```
 
 ### Cleaning Build
 ```bash
-npm run clean
+pnpm run clean
 ```
 
 ## Troubleshooting
